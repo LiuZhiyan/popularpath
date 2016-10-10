@@ -61,7 +61,7 @@ public class GraphRandom extends Graph {
      * @param node The source node.
      * @param preEdge The pre-order edge which drives start node access the path.
      * @param edgeOwner The edge owner name of all the nodes in the path. In our case, this is user name.
-     * @return Boolean value indicates if the edge is the next one to evaluate.
+     * @return The stream can fetch proper edges out to evaluate.
      */
     @Override
     protected Stream<Edge> getNextEdges(final Node node, final Edge preEdge, final String edgeOwner) {
